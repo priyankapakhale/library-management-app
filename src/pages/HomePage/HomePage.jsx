@@ -4,6 +4,7 @@ import styles from './HomePage.module.css';
 import { useSelector } from 'react-redux';
 import { isEmpty, map, filter, includes, toLower, size } from 'lodash';
 import cartIcon from '../../assets/icons/cart.svg';
+import BorrowedBooks from '../../components/BorrowedBooks/BorrowedBooks';
 
 const HomePage = () => {
     const { allBooks, borrowedBooks } = useSelector(state => state);
