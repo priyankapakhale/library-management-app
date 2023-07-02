@@ -22,3 +22,5 @@ The Project Name follows a microservices architecture to achieve scalability, ma
 
 1. **User can filter books**: Searchbox is added in the header. User can enter either the title of the book or author or genre of the book and all matching books will be filtered and displayed in the library
 2. **Toast message**: Toast message is added for informing user when he/she tries to borrow a book after reaching borrow limit of max 2 books
+3. **Only 1 user is present**: I am assuming that only 1 user is present. If needed register and login page can be added along with authReducer for user management.
+
