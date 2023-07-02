@@ -31,7 +31,7 @@ const HomePage = () => {
                     <div className={styles.searchbox}>
                         <input type="text" placeholder='Type title, author, genre' onChange={handleChange} value={searchText} />
                     </div>
-                    <div className={styles.cartWrapper}>
+                    <div className={styles.cartWrapper} onClick={() => setShowBorrowedBooks(true)}>
                         {size(borrowedBooks) > 0 && <div className={styles.count}>{size(borrowedBooks)}</div>}
                         <img className={styles.cartIcon} src={cartIcon} alt="cart" />
                         {showBorrowedBooks && <BorrowedBooks setShowBorrowedBooks={setShowBorrowedBooks} />}
