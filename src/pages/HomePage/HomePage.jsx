@@ -8,6 +8,7 @@ import cartIcon from '../../assets/icons/cart.svg';
 const HomePage = () => {
     const { allBooks, borrowedBooks } = useSelector(state => state);
     const [searchText, setSearchText] = useState('');
+    const [showBorrowedBooks, setShowBorrowedBooks] = useState(false);
 
     const filteredBooks = useMemo(() => {
         const query = toLower(searchText);
@@ -32,6 +33,7 @@ const HomePage = () => {
                     <div className={styles.cartWrapper}>
                         {size(borrowedBooks) > 0 && <div className={styles.count}>{size(borrowedBooks)}</div>}
                         <img className={styles.cartIcon} src={cartIcon} alt="cart" />
+                        {showBorrowedBooks && <BorrowedBooks setShowBorrowedBooks={setShowBorrowedBooks} />}
                     </div>
                 </div>
             </div>
