@@ -1,0 +1,14 @@
+.wrapper {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40px;
+    width: fit-content;
+    padding: 8px 16px;
+    background: white;
+    border: gray;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
