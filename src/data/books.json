@@ -4,7 +4,7 @@
     "name": "Hitchhiker's guide to the galaxy",
     "author": "Douglas Adams",
     "cover": "https://m.media-amazon.com/images/I/81AAMH2S0LL._AC_UF1000,1000_QL80_.jpg",
-    "quantity": 0,
+    "quantity": 2,
     "genre": "Science fiction",
     "description": "The Hitchhiker's Guide to the Galaxy is the first book in the Hitchhiker's Guide to the Galaxy comedy science fiction \"trilogy of five books\" by Douglas Adams, with a sixth book written by Eoin Colfer. The novel is an adaptation of the first four parts of Adams's radio series of the same name, centering on the adventures of the only man to survive the destruction of Earth; while roaming outer space, he comes to learn the truth behind Earth's existence."
   },
@@ -22,7 +22,7 @@
     "name": "To kill a mockingbird",
     "author": "Harper Lee",
     "cover": "https://m.media-amazon.com/images/I/41j-s9fHJcL.jpg",
-    "quantity": 20,
+    "quantity": 1,
     "genre": "Fiction",
     "description": "To Kill a Mockingbird is a novel by the American author Harper Lee. It was published in 1960 and was instantly successful. In the United States, it is widely read in high schools and middle schools"
   },
@@ -67,7 +67,7 @@
     "name": "Lord of the rings",
     "author": "J. R. R. Tolkien",
     "cover": "https://cdn.kobo.com/book-images/7a557cb3-f72a-47c3-992b-951c9566e4d4/1200/1200/False/the-fellowship-of-the-ring-the-lord-of-the-rings-book-1-1.jpg",
-    "quantity": 0,
+    "quantity": 4,
     "genre": "Fantasy",
     "description": "The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien. Set in Middle-earth, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work"
   }
