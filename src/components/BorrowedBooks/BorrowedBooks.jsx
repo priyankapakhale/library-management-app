@@ -1,11 +1,13 @@
 import React, { useMemo, useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './BorrowedBooks.module.css';
-import { filter, includes, isEmpty, map } from 'lodash';
+import { filter, get, includes, isEmpty, map } from 'lodash';
 import { returnBook } from '../../redux/reducers/booksReducer';
 
 const BorrowedBooks = ({ setShowBorrowedBooks }) => {
-    const { allBooks, borrowedBooks } = useSelector(state => state);
+    const allBooks = useSelector(state => get(state, 'allBooks', []));
+    const borrowedBooks = useSelector(state => get(state, 'borrowedBooks', []));
+
     const dispatch = useDispatch();
     const ref = useRef(null);
 
@@ -33,11 +35,11 @@ const BorrowedBooks = ({ setShowBorrowedBooks }) => {
         <div className={styles.wrapper} ref={ref}>
             {!isEmpty(borrowedBooks) ?
                 map(borrowedBooksData, book => (
-                    <div key={book.id} className={styles.bookWrapper}>
+                    <div data-testid="borrowed-book-div" key={book.id} className={styles.bookWrapper}>
                         <img src={book.cover} alt={book.name} className={styles.cover} />
                         <div className={styles.info}>
                             <div>{book.name}</div>
-                            <button className={styles.button} onClick={() => handleReturn(book.id)}>Return</button>
+                            <button data-testid="return-button" className={styles.button} onClick={() => handleReturn(book.id)}>Return</button>
                         </div>
                     </div>
                 )) :
