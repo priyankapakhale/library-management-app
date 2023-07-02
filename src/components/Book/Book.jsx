@@ -1,16 +1,27 @@
-import { includes } from 'lodash';
+import { includes, size } from 'lodash';
 import React from 'react';
 import styles from './Book.module.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { borrowBook, returnBook } from '../../redux/reducers/booksReducer';
 
 const Book = ({ id, name, author, cover, quantity, genre, description }) => {
     const { borrowedBooks } = useSelector(state => state);
+    const dispatch = useDispatch();
+
     const isAvailable = quantity > 0;
     const isBorrowed = includes(borrowedBooks, id);
     const isDisabled = !isBorrowed && !isAvailable;
+    const canBorrow = size(borrowedBooks) < 2;
 
-    const handleBorrow = () => { }
-    const handleReturn = () => { }
+    const handleBorrow = () => {
+        if (canBorrow) {
+            dispatch(borrowBook({ id }));
+        }
+    }
+
+    const handleReturn = () => {
+        dispatch(returnBook({ id }));
+    }
 
     return (
         <div className={styles.wrapper}>
