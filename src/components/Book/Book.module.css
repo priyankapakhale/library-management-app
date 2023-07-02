@@ -61,6 +61,7 @@
   margin-top: auto;
   cursor: pointer;
   color: white;
+  border: none;
 }
 
 .disabledButton {
