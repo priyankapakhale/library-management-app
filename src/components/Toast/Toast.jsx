@@ -3,7 +3,7 @@ import styles from './Toast.module.css';
 
 const Toast = ({ show, message }) => {
     return show ? (
-        <div className={styles.wrapper}>{message}</div>
+        <div data-testid="toast-message-div" className={styles.wrapper}>{message}</div>
     ) : null;
 }
 
