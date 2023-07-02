@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './BorrowedBooks.module.css';
 import { filter, includes, isEmpty, map } from 'lodash';
@@ -7,6 +7,7 @@ import { returnBook } from '../../redux/reducers/booksReducer';
 const BorrowedBooks = ({ setShowBorrowedBooks }) => {
     const { allBooks, borrowedBooks } = useSelector(state => state);
     const dispatch = useDispatch();
+    const ref = useRef(null);
 
     const borrowedBooksData = useMemo(() => {
         return filter(allBooks, book => includes(borrowedBooks, book.id))
@@ -16,8 +17,20 @@ const BorrowedBooks = ({ setShowBorrowedBooks }) => {
         dispatch(returnBook({ id }));
     }
 
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (ref.current && !ref.current.contains(event.target)) {
+                setShowBorrowedBooks(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [ref]);
+
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} ref={ref}>
             {!isEmpty(borrowedBooks) ?
                 map(borrowedBooksData, book => (
                     <div key={book.id} className={styles.bookWrapper}>
