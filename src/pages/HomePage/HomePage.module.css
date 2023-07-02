@@ -12,8 +12,6 @@
   flex-direction: column;
   gap: 24px;
   padding: 40px;
-  height: calc(100vh - 140px);
-  overflow: scroll;
 }
 
 .emptyBooksWrapper {
