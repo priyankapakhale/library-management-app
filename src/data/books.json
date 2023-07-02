@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Hitchhiker's guide to the galaxy",
+    "author": "Douglas Adams",
+    "cover": "https://m.media-amazon.com/images/I/81AAMH2S0LL._AC_UF1000,1000_QL80_.jpg",
+    "quantity": 0,
+    "genre": "Science fiction",
+    "description": "The Hitchhiker's Guide to the Galaxy is the first book in the Hitchhiker's Guide to the Galaxy comedy science fiction \"trilogy of five books\" by Douglas Adams, with a sixth book written by Eoin Colfer. The novel is an adaptation of the first four parts of Adams's radio series of the same name, centering on the adventures of the only man to survive the destruction of Earth; while roaming outer space, he comes to learn the truth behind Earth's existence."
+  },
+  {
+    "id": 2,
+    "name": "Death on the nile",
+    "author": "Agatha Cristie",
+    "cover": "https://i.harperapps.com/covers/9780062073556/y648.jpg",
+    "quantity": 1,
+    "genre": "Mystery",
+    "description": "Death on the Nile is a work of detective fiction by British writer Agatha Christie, published in the UK by the Collins Crime Club on 1 November 1937 and in the US by Dodd, Mead and Company the following year."
+  },
+  {
+    "id": 3,
+    "name": "To kill a mockingbird",
+    "author": "Harper Lee",
+    "cover": "https://m.media-amazon.com/images/I/41j-s9fHJcL.jpg",
+    "quantity": 20,
+    "genre": "Fiction",
+    "description": "To Kill a Mockingbird is a novel by the American author Harper Lee. It was published in 1960 and was instantly successful. In the United States, it is widely read in high schools and middle schools"
+  },
+  {
+    "id": 4,
+    "name": "The shining",
+    "author": "Stephen King",
+    "cover": "https://m.media-amazon.com/images/I/51iytv+IivL._SY344_BO1,204,203,200_.jpg",
+    "quantity": 20,
+    "genre": "Horror",
+    "description": "The Shining is a 1977 horror novel by American author Stephen King. It is King's third published novel and first hardback bestseller; its success firmly established King as a preeminent author in the horror genre."
+  },
+  {
+    "id": 5,
+    "name": "Silent child",
+    "author": "Sarah A. Denzil",
+    "cover": "https://m.media-amazon.com/images/I/61XBIdBL2eL._AC_UF1000,1000_QL80_.jpg",
+    "quantity": 20,
+    "genre": "Mystery",
+    "description": "It was the tragic story of the year - a little boy, Aiden, wandered away from school during a terrible flood, fell into the river, and drowned."
+  },
+  {
+    "id": 6,
+    "name": "The Metamorphosis",
+    "author": "Franz Kafka",
+    "cover": "https://m.media-amazon.com/images/I/41HYmjTljGL.jpg",
+    "quantity": 20,
+    "genre": "Fiction",
+    "description": "Metamorphosis is a novella written by Franz Kafka which was first published in 1915. One of Kafka's best-known works, Metamorphosis tells the story of salesman Gregor Samsa, who wakes one morning to find himself inexplicably transformed into a huge insect and subsequently struggles to adjust to this new condition."
+  },
+  {
+    "id": 7,
+    "name": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "cover": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+    "quantity": 20,
+    "genre": "Fantasy",
+    "description": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry."
+  },
+  {
+    "id": 8,
+    "name": "Lord of the rings",
+    "author": "J. R. R. Tolkien",
+    "cover": "https://cdn.kobo.com/book-images/7a557cb3-f72a-47c3-992b-951c9566e4d4/1200/1200/False/the-fellowship-of-the-ring-the-lord-of-the-rings-book-1-1.jpg",
+    "quantity": 0,
+    "genre": "Fantasy",
+    "description": "The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien. Set in Middle-earth, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work"
+  }
+]
