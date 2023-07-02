@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 100px;
+  background-color: lightblue;
+}
+
+.booksWrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  height: calc(100vh - 140px);
+  overflow: scroll;
+}
+
+.emptyBooksWrapper {
+  font-style: italic;
+  text-align: center;
+}
