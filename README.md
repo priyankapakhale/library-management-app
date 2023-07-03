@@ -6,8 +6,6 @@ Welcome to the Library Management App repository! In this README, I will cover i
 
 ## Architecture
 
-The Project Name follows a microservices architecture to achieve scalability, maintainability, and flexibility. The main components of the system include:
-
 - **HomePage**: This component contains the header and wrapper for showing books list. The header consists of app name, searchbox for filtering books, and a cart button
 - **Book**: This component displays all info about a book consistsing of title, author, genre and description with borrow action button
 - **BorrowedBook**: This component shows list of borrowed books by user in a popup
